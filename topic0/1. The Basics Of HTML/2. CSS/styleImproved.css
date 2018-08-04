@@ -1,0 +1,72 @@
+html, body{
+    /* width: 100%; */
+    height: 100%;
+    margin: 0;
+}
+
+header{
+    background-color: #088a9b !important;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+/*  If I want the header to float   
+    width: 100%;
+    position: fixed; */
+}
+
+/*With flexbox*/
+article{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/*With css grid*/
+/* article{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+} */
+
+main{
+    flex-grow: 1;
+    padding: 10px 20px;
+}
+
+header ul, footer ul{
+    list-style: none;
+}
+
+nav li, footer li{
+    display: inline-block;
+    padding: 10px 100px;
+}
+
+nav a, footer a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+nav a:hover, footer a:hover{
+    color: rgb(189, 243, 243);
+}
+
+header, main, footer{
+    flex-shrink: 0;
+}
+
+footer{
+    background-color: #088a9b !important;
+    text-align: center;
+    /* If I want the footer to float
+    bottom: 0;
+    position: fixed; */
+}
+
+/* header, footer{
+    margin: 0;
+    float: left;
+} */

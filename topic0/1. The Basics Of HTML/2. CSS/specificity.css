@@ -1,0 +1,42 @@
+*{
+    font-weight: 700;
+}
+
+.header{
+    font-size: 46px;
+}
+
+.navigation{
+    font-size: 12px;
+}
+
+.content{
+    font-size: 14px;
+}
+
+.sidebar{
+    font-size: 10px;
+}
+
+.footer{
+    font-size: 10px;
+}
+
+/* div[class$="r"] {
+    background: magenta;
+} */
+
+/*class ends with 'r'*/
+[class $= "r"] {
+    background: magenta;
+}
+
+/*class contains 'a' and doesn't end with 'r'*/
+[class *= a]:not([class $= "r"]){ 
+    background-color: blue;
+}
+
+/*Change background without changing the inline style*/
+.oh-no-inline-styles{
+    background-color: green !important;
+}

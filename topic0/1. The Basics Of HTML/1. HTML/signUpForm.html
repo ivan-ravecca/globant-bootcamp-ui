@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Sign up form">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Veronica Echezarreta">
+    <title>My Form</title>
+</head>
+<body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+    <h1 align="center">My sign up form</h1>
+    <form>
+        <label>Your first name: </label><br />
+        <input name="firstName" type="text" autofocus required />
+        <br />
+        <label>Your last name: </label><br />
+        <input name="lastName" type="text" required />
+        <br />
+        <label>Your e-mail address: </label><br />
+        <input name="Email" type="email" required placeholder="example@example.com" />
+        <br />
+        <label>Your date of birth: </label><br />
+        <input type="date" name="birthday" required>
+        <!-- <input type="date" date-format="dd/mm/yyyy" required/> -->
+        <br />
+        <label>Your favorite sport: </label><br />
+        <select name="sports">
+            <option value="Football">Football</option>
+            <option value="Tennis">Tennis</option>
+            <option value="Basketball">Basketball</option>
+        </select>
+        <!-- This is better in a search form
+        <input id="sport" type="text" list="sports" />
+        <datalist id="sports">
+           <option value="Tennis">Tennis</option>
+           <option value="Football">Football</option>
+           <option value="Basketball">Basketball</option>
+        </datalist> -->
+        <br />
+        <label>Add a small bio: </label><br />
+        <textarea name="message"></textarea>
+        <br /><br />
+        <input type="submit" value="Submit"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Clear form" />
+    </form>
+</body>
+</html>
